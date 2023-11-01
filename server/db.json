@@ -1,0 +1,12 @@
+{
+    "posts": [
+        {
+            "name": "indonesia",
+            "population": "213231231",
+            "region" : "Asia",
+            "capital": "Tashkent",
+            "flags": "indonesia.png"
+        }
+    ]
+    
+}

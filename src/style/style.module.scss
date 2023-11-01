@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@500&family=Unbounded:wght@300&display=swap');
+
+body {
+    margin: 0 auto;
+    padding: 10px, 10px;
+    min-width: 320px;
+    min-height: 100%;
+    background-color: #f6eded;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        .navbar h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin: 0;
+        }
+
+        .navbarright {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .header {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        height: 30px;
+
+        select {
+            font-size: 12px;
+            width: 100px;
+
+            option {
+                font-size: 12px;
+            }
+        }
+    }
+
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            width: 18rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px;
+            background-color: #fff;
+
+            .cardImgTop {
+                max-width: 100%;
+                height: 200px;
+                width: 100%;
+            }
+
+            .cardBody {
+                padding: 1rem;
+            }
+
+            .cardTitle {
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+
+            .cardText {
+                font-size: 1rem;
+                color: #333;
+            }
+
+            .move {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .detail {
+        display: flex;
+        padding: 40px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+
+        .cardDetail {
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 400px;
+        }
+
+        .paraph {
+            display: flex;
+            gap: 60px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        padding: auto;
+    }
+    .detail {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 100px;
+
+        .cardDetail {
+            padding: 20px;
+        }
+
+        img {
+            width: 100px;
+        }
+    }
+}
